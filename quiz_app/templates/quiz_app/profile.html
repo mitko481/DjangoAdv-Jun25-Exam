@@ -1,0 +1,37 @@
+{% extends 'quiz_app/base.html' %}
+{% block content %}
+<h2>{{ user.username }}'s Trivio Profile</h2>
+{% if profile %}
+    <div class="mb-3">
+        {% if profile.avatar %}
+            <img src="{{ profile.avatar.url }}" alt="Avatar" style="max-width:100px; border-radius:50%;">
+        {% endif %}
+        {% if profile.bio %}
+            <p><strong>Bio:</strong> {{ profile.bio }}</p>
+        {% endif %}
+    </div>
+{% endif %}
+<h4>Quiz Attempts</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Quiz</th>
+            <th>Score</th>
+            <th>Date</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for submission in submissions %}
+            <tr>
+                <td>{{ submission.quiz.title }}</td>
+                <td>{{ submission.score }}</td>
+                <td>{{ submission.timestamp|date:"Y-m-d H:i" }}</td>
+                <td><a href="{% url 'quiz_result' submission.id %}">View</a></td>
+            </tr>
+        {% empty %}
+            <tr><td colspan="4">No attempts yet.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

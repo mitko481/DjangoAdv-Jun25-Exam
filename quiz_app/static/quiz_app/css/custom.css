@@ -1,0 +1,109 @@
+/* Custom styles for Quiz App */
+
+body {
+    background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+    min-height: 100vh;
+}
+
+.navbar {
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+h2, h4 {
+    color: #3b3b5c;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card, .list-group-item, .table {
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    background: #fff;
+}
+
+
+.btn-primary, .btn-success, .btn-danger, .btn-secondary {
+    border-radius: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(59,91,188,0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-secondary:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(99,102,241,0.13);
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    background: rgba(99,102,241,0.25);
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    z-index: 2;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.form-check-input:checked {
+    background-color: #6366f1;
+    border-color: #6366f1;
+}
+
+.form-check-label {
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.table th {
+    background: #6366f1;
+    color: #fff;
+    border: none;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.list-group-item {
+    margin-bottom: 0.5rem;
+    border: none;
+    transition: box-shadow 0.2s;
+}
+
+.list-group-item:hover {
+    box-shadow: 0 4px 16px rgba(99,102,241,0.08);
+    background: #f1f5ff;
+}
+
+a {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4338ca;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #888;
+}

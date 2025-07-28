@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="{% static 'quiz_app/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>You have been logged out</h1>
+        <p>Thank you for using Trivio. We hope to see you again!</p>
+        <a href="{% url 'login' %}" class="btn btn-primary">Login Again</a>
+        <a href="{% url 'quiz_list' %}" class="btn btn-secondary">Back to Quizzes</a>
+    </div>
+</body>
+</html>
