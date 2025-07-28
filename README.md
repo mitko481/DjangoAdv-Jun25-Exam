@@ -72,9 +72,6 @@ To add a new quiz (such as a "Gaming" quiz, for example) and ensure questions an
 
 ---
 
-   OPTIONAL: When installed, add to PATH to prevent any problems from occuring (steps should be provided when you run ```pip install django```).
-
-
 4. Run migrations:
    ```
    python manage.py migrate
