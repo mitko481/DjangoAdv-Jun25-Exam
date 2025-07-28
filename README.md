@@ -14,44 +14,6 @@ This is a trivia application built with Django that includes user authentication
 - Custom request logging middleware
 - Admin interface for managing quizzes
 
-## Project Structure
-
-```
-quiz_project
-├── quiz_app
-│   ├── models.py
-│   ├── views.py
-│   ├── forms.py
-│   ├── urls.py
-│   ├── admin.py
-│   ├── user_profile.py
-│   ├── middleware.py
-│   └── templates
-│       └── quiz_app
-│           ├── base.html
-│           ├── quiz_list.html
-│           ├── quiz_detail.html
-│           ├── registration.html
-│           ├── login.html
-│           ├── logout.html
-│           ├── results.html
-│           ├── profile.html
-│           └── 404.html
-├── api
-│   ├── serializers.py
-│   ├── submission_serializers.py
-│   ├── views.py
-│   ├── submission_views.py
-│   ├── urls.py
-│   └── tests.py
-├── quiz_project
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── manage.py
-└── README.md
-```
-
 ## Installation
 
 1. Clone the repository:
