@@ -13,7 +13,6 @@ This is a trivia application built with Django that includes user authentication
 - Admin interface for managing quizzes
 
 ## Installation
-
 1. Clone the repository:
    ```
    git clone <repository-url>
@@ -43,25 +42,6 @@ This is a trivia application built with Django that includes user authentication
    ```
    python manage.py runserver
    ```
-
-## REST API
-- List quizzes: `GET /api/quizzes/`
-- Quiz detail: `GET /api/quizzes/<slug>/`
-- List your submissions: `GET /api/submissions/` (requires login)
-- Submission detail: `GET /api/submissions/<id>/` (requires login)
-
-## User Profile
-- Each user has a profile with bio and avatar (image upload).
-- Profile is auto-created on registration.
-
-## Middleware
-- All requests are logged by custom middleware in `quiz_app/middleware.py`.
-
-## Testing
-- Run API tests with:
-  ```
-  python manage.py test api
-  ```
 
 ## UI/UX Enhancements
 Trivio includes the following interactive and visual improvements:
