@@ -1,6 +1,6 @@
 
 # Trivio
-This is a trivia application built with Django that includes user authentication, quiz management, result tracking, REST API, user profiles, and custom middleware.
+This is a trivia application built with Django.
 
 ## Features
 - User registration and authentication (with custom validation)
@@ -42,6 +42,12 @@ This is a trivia application built with Django that includes user authentication
    ```
    python manage.py runserver
    ```
+
+## Testing
+Run API tests with:
+  ```
+  python manage.py test api
+  ```
 
 ## UI/UX Enhancements
 Trivio includes the following interactive and visual improvements:
