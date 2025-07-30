@@ -7,7 +7,7 @@ This is a trivia application built with Django.
 - Create and manage quizzes
 - Answer questions and submit responses
 - View results and feedback on answers
-- Profile page with quiz history, bio, and avatar
+- Profile page with quiz history
 - REST API for quizzes and user submissions (Django REST Framework)
 - Custom request logging middleware
 - Admin interface for managing quizzes
